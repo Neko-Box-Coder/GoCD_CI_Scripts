@@ -12,14 +12,18 @@ if [ -d $1 ] && [ -d $2 ]; then
     fi
 
     if  [ $mainTime -ge $prTime ]; then
+        echo "Using $1"
         mv $1 $3
     else
+        echo "Using $2"
         mv $2 $3
     fi
 else
     if [ -d $1 ]; then
+        echo "Using $1"
         mv $1 $3
     else
+        echo "Using $2"
         mv $2 $3
     fi
 fi
