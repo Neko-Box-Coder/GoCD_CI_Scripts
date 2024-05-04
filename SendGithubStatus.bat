@@ -55,6 +55,6 @@ curl -L --fail-with-body ^
     -d ^
     ^"{ ^
         \"context\": \"Job !JOB_NAME! in stage !STAGE_NAME! for pipeline !PIPELINE_NAME!\", ^
-        \"target_url\": \"https://ci.nekoboxcoder.dev/go/pipelines/!PIPELINE_NAME!/!PIPELINE_NUM!/!STAGE_NAME!/!STAGE_NUM!/!JOB_NAME!\", ^
+        \"target_url\": \"https://ci.nekoboxcoder.dev/go/tab/build/detail/!PIPELINE_NAME!/!PIPELINE_NUM!/!STAGE_NAME!/!STAGE_NUM!/!JOB_NAME!\", ^
         \"state\": \"%SEND_STATUS%\" ^
     }^"
